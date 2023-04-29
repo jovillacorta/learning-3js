@@ -22,7 +22,7 @@ camera.position.setZ(150);
 camera.position.setY(50);
 camera.position.setX(0);
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('pixeloffice.glb', 
+gltfLoader.load('/pixeloffice.glb', 
 (gltf)=> {
   scene.add(gltf.scene);
  // var blenderCam = gltf.camera[0];
@@ -66,7 +66,7 @@ function addStars(){
 
 Array(200).fill().forEach(addStars);
 
-const spaceTexture = new THREE.TextureLoader().load("space.png");
+const spaceTexture = new THREE.TextureLoader().load("/space.png");
 scene.background = spaceTexture;
 
 
